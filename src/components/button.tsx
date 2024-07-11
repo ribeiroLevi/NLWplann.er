@@ -5,7 +5,7 @@ const buttonVariants = tv({
   base: "rounded-lg px-5 py-2 flex items-center justify-center gap-2",
   variants: {
     variant: {
-      primary: "bg-lime-300 text-zinc-950 hover:text-lime-400 ",
+      primary: "bg-lime-300 text-zinc-950 hover:text-lime-800 ",
       secondary: "bg-zinc-800 text-zinc-200 hover:bg-zinc-800",
     },
     size: {
@@ -28,7 +28,7 @@ interface ButtonProps
 
 export function Button({ children, variant, size, ...props }: ButtonProps) {
   return (
-    <button {...props} className={buttonVariants({ variant })}>
+    <button {...props} className={buttonVariants({ variant, size })}>
       {children}
     </button>
   );

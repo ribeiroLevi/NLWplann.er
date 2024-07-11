@@ -5,6 +5,7 @@ import { ImportantLinks } from "./importantLinks";
 import { Guests } from "./guest";
 import { Activities } from "./activities";
 import { DestinationAndDateHeader } from "./destinationAndDateHeader";
+import { Button } from "../../components/button";
 
 export function TripDetailPage() {
   const [isCreateActivityModalOpen, setisCreateActivityModalOpen] =
@@ -34,13 +35,13 @@ export function TripDetailPage() {
         <div className="flex-1 space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-3xl font-semibold ">Atividades</h2>
-            <button
+            <Button
               onClick={openCreateActivityModal}
               className="bg-lime-300 text-lime-950 rounded-lg px-5 py-2 flex items-center gap-2 hover:bg-lime-400"
             >
               <Plus className="size-5" />
               Cadastrar atividade
-            </button>
+            </Button>
           </div>
           <Activities />
         </div>
