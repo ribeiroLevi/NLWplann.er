@@ -42,7 +42,11 @@ export function ConfirmTripModal({
             preencha seus dados abaixo.
           </p>
         </div>
-        <form onSubmit={createTrip} className="space-y-3">
+        <form
+          name="confirmTripForm"
+          onSubmit={createTrip}
+          className="space-y-3"
+        >
           <div className="flex flex-row items-center gap-2 flex-1 h-14 px-4 bg-zinc-950 border border-zinc-800 rounded-lg">
             <User className="text-zinc-400 size-5" />
             <input
